@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQery Event</title>
+	<script src="jquery-3.1.0.js"></script>
+	<script>
+		$(document).ready(function(){
+			var $header = $('h1');
+			for(var i = 0; i<$header.length; i++){
+				if(i%2 == 1){
+					var domElement = $header.get(i);
+					$(domElement).css('backgroundColor', 'red');
+				}
+			}
+		});
+	</script>
+</head>
+<body>
+	<h1>headerA</h1>
+	<h1>headerB</h1>
+	<h1>headerC</h1>
+	<h1>headerD</h1>
+</body>
+</html>
